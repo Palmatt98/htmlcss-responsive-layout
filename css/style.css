@@ -4,6 +4,41 @@
 	box-sizing: border-box;
 }
 
+body{
+	font-size: 1.2rem;
+}
+.pt-sans-regular {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.pt-sans-bold {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.pt-sans-regular-italic {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.pt-sans-bold-italic {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+p {
+	line-height: 30px;
+}
+#hero-section p {
+	font-weight: 700;
+	color: #445869;
+}
+
 /* UTILITIES */
 .flex {
 	display: flex;
@@ -15,6 +50,32 @@
 .center {
 	justify-content: center;
 }
+
+.bg-arrow {
+	justify-content: center;
+	background-color: rgb(150 147 229);
+	margin-bottom: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	align-items: center;
+}
+.text-planing {
+	margin: 20px;
+}
+
+.arrow {
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.column {
+	flex-direction: column;
+}
+
 .w-30 {
 	width: 30%;
 }
@@ -26,27 +87,73 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+.m-auto{
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.d-block{
+	display: block;
+}
 
 .bg-white {
 	background-color: white;
 }
+
+.text-white{
+	color: white;
+}
 .bg-purple {
 	background-color: rgb(150 147 229);
+}
+.purple {
+	color: rgb(150 147 229);
+}
+.title {
+	color: white;
+	margin-top: 80px;
+}
+.blue {
+	color: rgb(0 132 253);
 }
 section {
 	padding: 40px 0;
 }
+section h1 {
+	font-size: 2rem;
+}
+.p-30{
+	padding: 30px;
+}
 
 /* /UTILITIES */
-header{
+header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	z-index: 9999;
 }
-main{
-	margin-top:80px;
+main {
+	margin-top: 80px;
+}
+img {
+	max-width: 100%;
+}
+
+.py {
+	padding: 20px 0px;
+}
+.my{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.rounded-img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	object-fit: cover; /*non stretcha l'immagine*/
 }
 /* HEADER */
 .head-container {
@@ -70,6 +177,34 @@ main{
 	margin-right: 10px;
 	color: white;
 }
+.btn-apple {
+	margin-top: 50px;
+	color: white;
+	background-color: rgb(0 132 253);
+	border-radius: 18px;
+	padding: 10px;
+}
+
+.cont-col {
+	text-align: center;
+	padding: 30px;
+}
+
+.img {
+	position: relative;
+	top: 17px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.font {
+	font-size: 80px;
+}
+
+.text {
+}
 
 /* /HEADER */
 
@@ -81,7 +216,7 @@ main{
 }
 .col {
 	width: 100%;
-	min-height: 300px; /*TO REMOVE*/
+	/* min-height: 300px; TO REMOVE */
 	border-radius: 40px;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -96,6 +231,13 @@ main{
 
 #hero-section .col {
 	background-color: rgb(181 221 255);
+}
+
+#testimonials-section .bg-purple h3{
+	letter-spacing: 4px;
+}
+[class*=fa-quote]{ /*seleziona tutte le classi che contengono la "SOTTOSTRINGA" fa-quote es.(fa-quote-right)*/
+	font-size: 1.2em; 
 }
 
 footer {
@@ -122,10 +264,26 @@ MEDIA QUERY
 		margin-right: 15px;
 	}
 
+	.btn-apple {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
 	.col-50 {
 		width: calc(100% / 2 - 30px);
 	}
-	
+	.cont-col {
+		position: relative;
+	}
+	img {
+		max-width: 200%;
+	}
+
+	.img {
+		position: relative;
+		top: 17px;
+		width: 50%;
+	}
 }
 /* DEKSTOP */
 @media screen and (min-width: 992px) {
@@ -143,11 +301,12 @@ MEDIA QUERY
 		margin-right: 15px;
 	}
 
-	.hamburger-menu{
+	.hamburger-menu {
 		display: none;
 	}
 
-	.list, li{
+	.list,
+	li {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
