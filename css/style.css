@@ -117,9 +117,13 @@ a {
 	color: white;
 	margin-top: 80px;
 }
+.font{
+	font-size: 80px;
+}
 .blue {
 	color: rgb(0 132 253);
 }
+
 section {
 	padding: 40px 0;
 }
@@ -310,6 +314,9 @@ MEDIA QUERY
 		position: relative;
 		top: 17px;
 		width: 50%;
+	}
+	#testimonials-section .p-title{
+		display: flex;
 	}
 	
 }
