@@ -38,6 +38,10 @@ p {
 	font-weight: 700;
 	color: #445869;
 }
+#benefits-section p{
+	font-weight: 700;
+	color: #445869;
+}
 
 /* UTILITIES */
 .flex {
@@ -144,9 +148,14 @@ img {
 .py {
 	padding: 20px 0px;
 }
+
 .my{
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+.my-2{
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .rounded-img {
@@ -199,12 +208,11 @@ img {
 	margin-bottom: 50px;
 }
 
-.font {
-	font-size: 80px;
+.size-number{
+	font-size: 60px;
 }
 
-.text {
-}
+
 
 /* /HEADER */
 
@@ -238,6 +246,25 @@ img {
 }
 [class*=fa-quote]{ /*seleziona tutte le classi che contengono la "SOTTOSTRINGA" fa-quote es.(fa-quote-right)*/
 	font-size: 1.2em; 
+}
+.btn-benefits{
+	padding: 7px 45px;
+	border-radius: 25px;
+}
+.rouded-quote{
+	position: relative;
+	width: 50%;
+
+}
+.quote{
+	position: absolute;
+	top: 0;
+	left: 150px;
+	font-size: 60px;
+}
+.title-cta{
+	color: #fdc15f;
+	font-size: 80px;
 }
 
 footer {
@@ -284,6 +311,7 @@ MEDIA QUERY
 		top: 17px;
 		width: 50%;
 	}
+	
 }
 /* DEKSTOP */
 @media screen and (min-width: 992px) {
